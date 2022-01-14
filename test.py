@@ -4,7 +4,7 @@ import cv2
 # 顔を変えるための関数
 def effect_face_func(img, rect):
     # 黒い画像(顔面上に乗せたい)をセット
-    image_file  = "/Users/satoutakumi/Documents/face-black/img/face-black.jpg" #絶とした画像の絶対パスに変更
+    image_file  = "//Users/satoutakumi/Documents/my-product/face-secret/face-black/img/face-black.jpg" #絶とした画像の絶対パスに変更
     #画像の読み込み
     marge_image = cv2.imread(image_file,-1)
     #画像をグレーに加工(画像のデータ量の圧縮)
@@ -32,7 +32,7 @@ WINDOW_NAME = "face-black"
 DEVICE_ID   = 0     # カメラのデバイスID(0:Macに内蔵のカメラ)
 
 # 分類器の指定
-cascade_file = "/Users/satoutakumi/Documents/face-black/haarcascade_frontalface_default.xml" #haarcascade_frontalface_default.xmlのある場所の絶対パスに変更
+cascade_file = "/Users/satoutakumi/Documents/my-product/face-secret/face-black/haarcascade_frontalface_default.xml" #haarcascade_frontalface_default.xmlのある場所の絶対パスに変更
 #haarcascade_frontalface_default.xml は https://github.com/opencv/opencv/blob/master/data/haarcascades/haarcascade_frontalface_alt.xml より引用
 face_cascade = cv2.CascadeClassifier(cascade_file)
 
